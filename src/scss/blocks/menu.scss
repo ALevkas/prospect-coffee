@@ -1,0 +1,23 @@
+.menu {
+    display: flex;
+    min-height: 50px;
+    align-items: center;
+}
+
+.menu__link {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease 0s;
+    margin: 0px 20px 0px 0px;
+}
+
+.menu__link._active {
+    color: #7a956b;
+}
+
+@media (max-width: 767px) {
+    .menu__link {
+        font-size: 12px;
+        margin: 0px 10px 0px 0px;
+    }
+}

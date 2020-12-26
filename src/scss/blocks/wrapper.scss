@@ -1,0 +1,27 @@
+.wrapper {
+    min-height: 100%;
+    opacity: 0;
+    transition: opacity .8s ease 0s;
+}
+
+.wrapper._loaded {
+    opacity: 1;
+}
+
+.wrapper._loaded .header{
+    transition: transform .8s ease .8s;
+    transform: translate(0px, 0px);
+}
+
+.wrapper._loaded .page__pagination {
+    transform: translate(0px, -50%);
+    transition: transform .6s ease .8s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.wrapper._free .page__pagination {
+    transition: all .3s ease 0s;
+    transform: translate(50px, -50%);
+    opacity: 0;
+}

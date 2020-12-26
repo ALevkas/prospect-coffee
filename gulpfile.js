@@ -105,7 +105,7 @@ function css() {
 }
 
 function js() {
-    return src(path.src.js, {base: './src/js'})
+    return src(path.src.js, {base: './src/js/'})
     .pipe(plumber())
     .pipe(rigger())
     .pipe(gulp.dest(path.build.js))
